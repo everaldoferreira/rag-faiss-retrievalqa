@@ -1,12 +1,3 @@
-"""
-Sistema de Recuperação de Informações com VectorDB (FAISS) e RetrievalQA.
-
-Fluxo:
-    PDF -> chunks -> embeddings (Ollama) -> banco vetorial FAISS
-    Pergunta -> embedding -> busca dos chunks mais próximos -> LLM responde
-
-Baseado no notebook vb-faiss-un04.ipynb (https://github.com/tmedeirosb/tsi-llm).
-"""
 
 import os
 
@@ -14,9 +5,6 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.vectorstores import FAISS
 from langchain_ollama import OllamaEmbeddings, OllamaLLM
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-
-# O RetrievalQA foi movido para o pacote langchain-classic nas versões recentes.
-# Em versões antigas do LangChain (0.3), o import seria: from langchain.chains import RetrievalQA
 from langchain_classic.chains import RetrievalQA
 
 # ---------------------------------------------------------------------------
