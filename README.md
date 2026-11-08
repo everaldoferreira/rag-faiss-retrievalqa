@@ -104,3 +104,6 @@ Primeiro o programa carrega o PDF e cria o banco FAISS (isso pode demorar um pou
 - Se o modelo não achar a resposta no documento, ele pode responder algo errado ou genérico. A qualidade depende bastante do PDF e de como a pergunta é feita.
 - O banco FAISS é criado de novo toda vez que o programa roda, então no começo demora um pouco.
 
+##Vídeo de demonstração
+
+Link do vídeo: [(vídeo)](https://www.loom.com/share/ad30ef7c69ee4c6182ddfd45037f9b36)
